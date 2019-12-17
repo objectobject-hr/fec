@@ -120,6 +120,5 @@ const tasks = {
 }
 
 module.exports = {
-  ...tasks,
-  init: series(tasks.clone, tasks.npmI, tasks.seed, tasks.build, tasks.start)
+  ...tasks
 }
