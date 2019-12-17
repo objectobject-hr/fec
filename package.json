@@ -1,0 +1,53 @@
+{
+  "name": "front-end-capstone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node proxy-blake/index.js",
+    "server:dev": "nodemon proxy-blake/index.js",
+    "client:dev": "webpack -d --watch",
+    "dev": "concurrently \"nodemon\" \"webpack -d --watch\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blakelmason/front-end-capstone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blakelmason/front-end-capstone/issues"
+  },
+  "homepage": "https://github.com/blakelmason/front-end-capstone#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "css-loader": "^3.3.2",
+    "file-loader": "^5.0.2",
+    "gulp": "^4.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "@babel/core": "^7.7.5",
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^0.20.0",
+    "moment": "^2.24.0",
+    "mongoose": "^5.8.1",
+    "morgan": "^1.9.1",
+    "node-sass": "^4.13.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "require-directory": "^2.1.1"
+  }
+}
